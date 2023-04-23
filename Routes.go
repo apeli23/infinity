@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/zohari-tech/sdphe/controllers"
+	"github.com/apeli23/infinity/controllers"
 )
 
 var basePath = "/api/v2"
