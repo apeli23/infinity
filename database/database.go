@@ -10,3 +10,17 @@ import (
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
+
+var Db *gorm.DB
+
+func init() {
+	database, err := gorm.Open(postgres.Open(os.Getenv("DATABASE_URL")), &gorm.Config{})
+
+	if err != nil {
+		panic(err)
+	}
+
+	Db = database
+
+	logrus.Info("Completed migration")
+}

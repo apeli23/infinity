@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/sirupsen/logrus"
-	"github.com/zohari-tech/sdphe/database"
+	"github.com/apeli23/infinity/database"
 )
 // User: This structure represents a user of the application.
 type User struct {
